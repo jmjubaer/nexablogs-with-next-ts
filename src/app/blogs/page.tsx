@@ -2,6 +2,7 @@ import BlogCard from "@/components/ui/BlogCard";
 import { Blog } from "@/types";
 
 const BlogsPage = async () => {
+    //  cache: "no-store"  is SSR
     const res = await fetch("http://localhost:5000/blogs", {
         cache: "no-store",
     });
