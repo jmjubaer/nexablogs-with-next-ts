@@ -2,7 +2,7 @@
 import { redirect } from "next/navigation";
 
 export const createBlog = async (blog: FormData) => {
-    // "use server" we can use this is a server component
+    // "use server" we can use this is a server compone
     const blogData = Object.fromEntries(blog.entries());
     const res = await fetch("http://localhost:5000/blogs", {
         method: "POST",
